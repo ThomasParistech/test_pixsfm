@@ -1,0 +1,112 @@
+{
+    "python.pythonPath": "/usr/bin/python3",
+    "python.linting.pylintArgs": [
+        "--rcfile",
+        ".vscode/.pylintrc"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "119"
+    ],
+    "editor.rulers": [
+        120
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--config-file",
+        ".vscode/.mypy.ini"
+    ],
+    "gitmoji.additionalEmojis": [
+        {
+            "emoji": "🎨",
+            "code": ":art:",
+            "description": "Improve structure / format of the code."
+        },
+        {
+            "emoji": "⚡️",
+            "code": ":zap:",
+            "description": "Improve performance.",
+        },
+        {
+            "emoji": "🔥",
+            "code": ":fire:",
+            "description": "Remove code or files.",
+        },
+        {
+            "emoji": "🐛",
+            "code": ":bug:",
+            "description": "Fix a bug.",
+        },
+        {
+            "emoji": "🚑",
+            "code": ":ambulance:",
+            "description": "Critical hotfix.",
+        },
+        {
+            "emoji": "✨",
+            "code": ":sparkles:",
+            "description": "Introduce new features.",
+        },
+        {
+            "emoji": "📝",
+            "code": ":memo:",
+            "description": "Add or update documentation.",
+        },
+        {
+            "emoji": "💡",
+            "entity": "&#128161;",
+            "code": ":bulb:",
+            "description": "Add or update comments in source code.",
+            "name": "bulb"
+        },
+        {
+            "emoji": "🎉",
+            "code": ":tada:",
+            "description": "Begin a project.",
+        },
+        {
+            "emoji": "✅",
+            "code": ":white_check_mark:",
+            "description": "Add or update tests.",
+        },
+        {
+            "emoji": "🔖",
+            "code": ":bookmark:",
+            "description": "Release / Version tags.",
+        },
+        {
+            "emoji": "🚨",
+            "code": ":rotating_light:",
+            "description": "Remove linter warnings.",
+        },
+        {
+            "emoji": "🚧",
+            "code": ":construction:",
+            "description": "Work in progress.",
+        },
+        {
+            "emoji": "👷",
+            "code": ":construction_worker:",
+            "description": "Add or update CI build system.",
+        },
+        {
+            "emoji": "🔨",
+            "entity": "&#128296;",
+            "code": ":hammer:",
+            "description": "Add or update build scripts and configuration files.",
+            "name": "hammer"
+        },
+        {
+            "emoji": "💥",
+            "entity": "&#x1f4a5;",
+            "code": ":boom:",
+            "description": "Introduce breaking changes.",
+            "name": "boom"
+        }
+    ],
+    "gitmoji.onlyUseAdditionalEmojis": true,
+    "gitmoji.showEmojiCode": false,
+    "python.formatting.provider": "autopep8"
+}
