@@ -102,7 +102,8 @@ RUN \
 # COLMAP
 #----------------------------------------------
 
-RUN apt-get install -y \
+RUN apt-get update -y && \
+    apt-get install -y \
     git \
     cmake \
     build-essential \
@@ -119,7 +120,8 @@ RUN apt-get install -y \
     libglew-dev \
     qtbase5-dev \
     libqt5opengl5-dev \
-    libcgal-dev
+    libcgal-dev \
+    libmetis-dev
 
 # CERES
 RUN apt-get install -y libcgal-qt5-dev
@@ -184,6 +186,8 @@ COPY . .
 #-------------------------------------------------------------
 #       Post Processing
 #-------------------------------------------------------------
+
+RUN pip install autopep8 pylint mypy
 
 ## Switch to non-root user
 ENV USER=dock
